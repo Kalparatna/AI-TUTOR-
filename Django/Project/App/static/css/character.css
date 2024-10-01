@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tutor-cards {
+    display: flex;
+    flex-direction: column; /* Align cards vertically */
+    gap: 20px; /* Space between cards */
+}
+
+.tutor-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    padding: 20px; /* Add padding to the card */
+}
+
+.tutor-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tutor-card input {
+    display: none; /* Hide the radio button */
+}
+
+.tutor-card label {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align content */
+    text-align: center; /* Center text */
+}
+
+.image-container {
+    width: 100px; /* Set a fixed width for the image container */
+    height: 100px; /* Set a fixed height for the image container */
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Hide overflow */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.tutor-image {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Auto height */
+}
+
+.tutor-name {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.tutor-description {
+    color: #666;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}

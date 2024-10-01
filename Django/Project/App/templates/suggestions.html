@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions for {{ topic }}</title>
+</head>
+<body>
+    <h1>Suggestions for "{{ topic }}"</h1>
+    <ul>
+        {% for suggestion in suggestions %}
+            <li>{{ suggestion.name }} - {{ suggestion.description }}</li>
+        {% empty %}
+            <li>No suggestions available.</li>
+        {% endfor %}
+    </ul>
+    
+    <!-- Link to choose tutor page -->
+    <a href="{% url 'choose_tutor' topic %}">Go to Choose Tutor Page</a>
+    
+    <a href="{% url 'index' %}">Go back</a>
+</body>
+</html>

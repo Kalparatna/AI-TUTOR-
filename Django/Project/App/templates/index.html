@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-TUTOR++</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    <header style="text-align: center; margin-bottom: 20px;">
+        <img src="{% static 'images/logo.png' %}" alt="Logo" style="width: 150px;">
+        <h1 style="margin-top: 10px;">AI-TUTOR++</h1> <!-- App Name -->
+    </header>
+
+    <!-- New Subtitle and Paragraphs -->
+    <h2 class="subtitle">A Personalized Learning Journey</h2>
+    <p class="paragraph">
+        Unlock the potential of learning designed just for you! Our advanced platform offers a customized educational journey, empowering you to master topics at your own pace.
+        Whether you're diving into something new or refining your skills, we're here to guide you every step of the way.
+    </p>
+    <p class="paragraph">
+        Excited to start your learning adventure? Type in any topic and begin your exploration!
+    </p>
+
+    <h1>Generate Learning Modules</h1>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+        <label for="topic">Enter a topic:</label>
+        <input type="text" id="topic" name="topic" value="{{ topic }}">
+        <button type="submit">Generate</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 AI-TUTOR++. All Rights Reserved.</p>
+        <p>Designed by Kalparatna</p>
+    </footer>
+</body>
+</html>

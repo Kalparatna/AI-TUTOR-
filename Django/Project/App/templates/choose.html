@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutor</title>
+</head>
+<body>
+    <h1>AI Tutor++</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="character">Choose Your Character:</label>
+        <select name="character" id="character">
+            <option value="Shah Rukh Khan">Shah Rukh Khan</option>
+            <option value="Virat Kohli">Virat Kohli</option>
+            <option value="Doremon">Doremon</option>
+            <option value="Steve Jobs">Steve Jobs</option>
+            <option value="Cristiano Ronaldo">Cristiano Ronaldo</option>
+        </select>
+        <br>
+        <label for="user_input">Ask Query:</label>
+        <input type="text" name="user_input" id="user_input" required>
+        <br>
+        <button type="submit">Ask the question</button>
+    </form>
+    
+    {% if response %}
+        <h2>{{ character }}'s Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Learning Modules</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+</head>
+<body>
+    <header style="text-align: center; margin-bottom: 20px;">
+        <img src="{% static 'images/logo.png' %}" alt="Logo" style="width: 150px;">
+        <h1 style="margin-top: 10px;">Generated Modules</h1> <!-- Page Title -->
+    </header>
+
+    <h2 class="subtitle">Your Generated Learning Modules for "{{ topic }}"</h2>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <div class="container">
+        {% for module in modules %}
+        <div class="card">
+            <h2>Module {{ forloop.counter }}</h2>
+            <p>{{ module }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Learning Modules Generator. All Rights Reserved.</p>
+        <p>Designed by [Your Name]</p>
+    </footer>
+</body>
+</html>
