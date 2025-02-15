@@ -1,7 +1,7 @@
 # AI-Powered Interactive Learning Platform
 
 ## 🚀 Overview
-The **AI-Powered Interactive Learning Platform** is designed to make education fun, engaging, and accessible to all students. By leveraging AI-driven personalized learning, this platform provides interactive mentorship from AI-based virtual personalities modeled after famous figures like **Virat Kohli, Steve Jobs, and Doraemon**. 
+The **AI-Powered Interactive Learning Platform** is designed to make education fun, engaging, and accessible to all students. By leveraging AI-driven personalized learning, this platform provides interactive mentorship from AI-based virtual personalities modeled after famous figures like **Virat Kohli, Shah Rukh Khan, Steve Jobs, and Doraemon**. 
 
 The platform ensures:
 - **Personalized learning experiences**
