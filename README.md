@@ -85,9 +85,9 @@ The platform helps students map out career paths and recommends resources based 
 
 ---
 ## 🎯 Benefits
-✅ **More Engagement** - Learning becomes fun and personalized.
-✅ **Skill Development** - Students gain skills tailored to their career goals.
-✅ **Career Readiness** - Personalized career guidance for a bright future.
+- ✅ **More Engagement** - Learning becomes fun and personalized.
+- ✅ **Skill Development** - Students gain skills tailored to their career goals.
+- ✅ **Career Readiness** - Personalized career guidance for a bright future.
 
 ---
 ## 🌍 Why This Matters
